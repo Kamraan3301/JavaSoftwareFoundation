@@ -47,11 +47,11 @@ public class LinkedList {
     }
 
     public void show() {
-        Node node = head;
-        while (node.next != null) {
-            System.out.println(node.data);
-            node = node.next;
+        Node n = head;
+        while (n.next != null) {
+            System.out.println(n.data);
+            n = n.next;
         }
-        System.out.println(node.data);
+        System.out.println(n.data);
     }
 }
