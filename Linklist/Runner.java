@@ -4,7 +4,10 @@ public class Runner {
         list.insert(5);
         list.insert(6);
         list.insert(6);
+        // list.insertAtStart(25);
+        list.insertAtLoc(2, 993);
         list.show();
+        ;
 
     }
 }
