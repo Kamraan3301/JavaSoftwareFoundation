@@ -28,6 +28,16 @@ public class LinkedList {
         head = node;
     }
 
+    public void delete(int index) {
+        Node node = new Node();
+        node.next = null;
+        Node n = head;
+        for (int i = 0; i < index - 1; i++) {
+            n = n.next;
+        }
+        head = n.next;
+    }
+
     public void insertAtLoc(int index, int data) {
         Node node = new Node();
         node.data = data;

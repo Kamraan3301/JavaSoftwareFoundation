@@ -6,6 +6,7 @@ public class Runner {
         list.insert(6);
         // list.insertAtStart(25);
         list.insertAtLoc(2, 993);
+        list.delete(0);
         list.show();
         ;
 
