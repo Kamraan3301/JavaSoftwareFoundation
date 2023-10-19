@@ -1,4 +1,3 @@
-
 public class LinkedList {
     Node head;
 
@@ -32,10 +31,12 @@ public class LinkedList {
         Node node = new Node();
         node.next = null;
         Node n = head;
+        Node n1 = null;
         for (int i = 0; i < index - 1; i++) {
             n = n.next;
         }
-        head = n.next;
+        n1 = n.next;
+        n.next = n1.next;
     }
 
     public void insertAtLoc(int index, int data) {
